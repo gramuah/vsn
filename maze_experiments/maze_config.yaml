@@ -1,0 +1,64 @@
+base_path: "maze_experiments"
+
+forward_step: 0.7
+turn_step: 45
+num_rows: 3
+num_cols: 3
+max_steps: 300
+domain_rand: True
+
+sparse_reward: False
+train_action_selection_options: greedy_action # argmax
+n_stack: 20 # int. Number of stacked states. Allows the aget to have temporal information.
+
+
+
+
+epsilon: 1.0 # float in [0, 1]. Initial exploration rate
+epsilon_decay: 0.97 # float. Exploration rate decay factor or scheduler from espermatozoides.training.utils.schedules.py.
+epsilon_min: 1.0 # float in [0, 1]. Minimum value the exploration rate can get.
+action_selection_options: greedy_action # Function from RL_Agent.base.utils.networks.action_selection_opti
+
+
+environment: "PyMaze" # "HM3DRLEnv"
+#############################################################
+#		PPO agent hyperparameters
+#############################################################
+
+# select network from habitat_experiments.utils.neuralnets.py
+use_clip: True
+actor_model: actor_model_clip_LSTM128_d1218tanh_d128tanh_d5softmax_maze
+critic_model: critic_model_clip_LSTM128_d128tanh_d128tanh_d1linear_maze
+
+# select agent params
+actor_lr: 1e-4 # float or tf.keras.optimizers.schedules
+critic_lr: 1e-4 # float or tf.keras.optimizers.schedules
+batch_size: 128 # int. Agent's training batch size
+memory_size: 5000 # int. PPO agent's experiences memory size for each thread.
+
+
+
+gamma: 0.97 # float in [0, 1]. Attenuate the importance of future returns in GAE estimation.
+lmbda: 0.9 # float in [0, 1]. Attenuate the importance of future returns in all returns estimations.
+train_epochs: 10 # int. Trainstep of the agent for each iteration of PPO.
+is_habitat: False # bool. True when using a habitat env.
+img_input: False # bool. Tru if network's inputs are images.
+state_size: "1024"
+n_threads: 3 # Int or None. Number of agent threads. If is None, CPU default number of thread are selected.
+tensorboard_dir: "logs" # String or False. Path to store tensorboard logs.
+loss_clipping: 0.15 # float. Loss clipping factor for PPO loss function. Larger values allows larger optimization steps.
+loss_critic_discount: 0.000 # float. Coeficient of inportance of critic loss in actor loss calculation.
+loss_entropy_beta: 0.0 # float. Coeficient of inportance of entropy loss factor in actor loss calculation.
+
+
+preprocess: None  # Fucntion from utils.preprocess.py
+
+##############################################################
+#		Experiment hyperparameters
+##############################################################
+
+# IL training parameters
+save_every: 3
+training_epochs: 100000 # int. Number of complete iterations of the imitation learning algorithm.
+test_epochs: 1 # Number of test iteration for checking the learned policy after training.
+render_test: False

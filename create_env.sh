@@ -5,13 +5,7 @@ export CONDA_ALWAYS_YES="true"
 # Create conda env
 source ~/miniconda3/etc/profile.d/conda.sh
 conda env create -f environment.yml
-conda activate pyril-headless
-
-# Install miniworld
-cd ..
-https://github.com/Farama-Foundation/Miniworld.git
-cd Miniworld
-pip -m install -e .
+conda activate vsn
 
 # Install pytorch and clip dependencies
 pip3 install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu116

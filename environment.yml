@@ -1,4 +1,4 @@
-name: pyril-headless
+name: vsn
 channels:
   - conda-forge
   - defaults
@@ -7,15 +7,14 @@ dependencies:
   - python=3.7
   - pip
   - pip:
-    - cloudpickle==2.2.0
-    - dill==0.3.5.1
-    - gym==0.23.0
-    - gym-notices==0.0.8
-    - numpy==1.21.1
-    - opencv-python==4.6.0.66
-    - pickle5==0.0.12
-    - pyyaml==6.0
-    - tensorflow-probability==0.12.0
-    - yacs==0.1.8
+    - cloudpickle
+    - dill
+    - gym
+    - numpy
+    - opencv-python
+    - pickle5
+    - pyyaml
+    - tensorflow-probability
+    - yacs
     - scikit-image
-prefix: /home/carlos/miniconda3/envs/pyril-headless
+    - miniworld

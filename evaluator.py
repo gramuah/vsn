@@ -107,7 +107,7 @@ for i in range(100):
     # plt.show()
 
     problem = rl_problem.Problem(environment, agent)
-    # agent.model.load_checkpoint(path='../../../resultados/MAZE_PAPER/S5/11/26-10-2022_19-47-59_checkpoints', checkpoint_to_restore='latest')
+    agent.model.load_checkpoint(path='../../../resultados/MAZE_PAPER/S5/11/26-10-2022_19-47-59_checkpoints', checkpoint_to_restore='latest')
 
     problem.test(render=config["render_test"], n_iter=config["test_epochs"], max_step_epi=config['max_steps'])
     # #

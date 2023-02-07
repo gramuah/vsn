@@ -7,6 +7,9 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda env create -f environment.yml
 conda activate vsn
 
+# Install environment
+pip install git+https://github.com/CarlosGual/gym-miniworld.git@one-hall-super-easy
+
 # Install pytorch and clip dependencies
 pip3 install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu116
 pip install git+https://github.com/openai/CLIP.git

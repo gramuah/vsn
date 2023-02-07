@@ -14,7 +14,8 @@ dependencies:
     - opencv-python
     - pickle5
     - pyyaml
-    - tensorflow-probability
+    - tensorflow-probability==0.12.0
     - yacs
     - scikit-image
-    - miniworld
+    - pandas
+    - matplotlib

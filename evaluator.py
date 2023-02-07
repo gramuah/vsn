@@ -1,6 +1,5 @@
 import pandas as pd
 import tensorflow as tf
-from matplotlib import pyplot as plt
 
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
@@ -107,7 +106,7 @@ for i in range(100):
     # plt.show()
 
     problem = rl_problem.Problem(environment, agent)
-    agent.model.load_checkpoint(path='../../../resultados/MAZE_PAPER/S5/11/26-10-2022_19-47-59_checkpoints', checkpoint_to_restore='latest')
+    agent.model.load_checkpoint(path=config['ckpt_path'], checkpoint_to_restore='latest')
 
     problem.test(render=config["render_test"], n_iter=config["test_epochs"], max_step_epi=config['max_steps'])
     # #

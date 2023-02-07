@@ -10,7 +10,7 @@ domain_rand: True
 sparse_reward: False
 train_action_selection_options: greedy_action # argmax
 n_stack: 20 # int. Number of stacked states. Allows the aget to have temporal information.
-
+cktp_path: # path to checkpoint
 
 
 

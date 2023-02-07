@@ -14,4 +14,24 @@ bash create_env.sh
 
 ## Usage
 
-TODO
+### Run training
+
+To run the training process execute the following commands in your terminal: 
+
+```shell
+conda activate vsn
+python launch_maze.py maze_experiments/maze_config.yaml
+```
+
+Basic parameters of the training are already set on [maze_config.yaml](maze_experiments/maze_config.yaml). Change them in order to meet your experiment requirements.
+
+### Run evaluation
+
+To run the evaluation process on the 100 test mazes execute the following commands in your terminal: 
+
+```shell
+conda activate vsn
+python evaluator.py maze_experiments/maze_config.yaml
+```
+
+Be sure to select the same [maze_config.yaml](maze_experiments/maze_config.yaml) that you used during training. Introduce the checkpoint path in the config file to load the model you want to evaluate.

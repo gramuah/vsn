@@ -34,4 +34,4 @@ conda activate vsn
 python evaluator.py maze_experiments/maze_config.yaml
 ```
 
-Be sure to select the same [maze_config.yaml](maze_experiments/maze_config.yaml) that you used during training. Introduce the checkpoint path in the config file to load the model you want to evaluate.
+Be sure to select the same [maze_config.yaml](maze_experiments/maze_config.yaml) that you used during training. Introduce the checkpoint path in the config file to load the model you want to evaluate. To use our baseline, download it [from here](https://universidaddealcala-my.sharepoint.com/:u:/g/personal/gram_uah_es/ERUowTQbAvFHvCg5VJuzku8BeBrNx8kEizPpNiKVlRj8Mg?Download=1).

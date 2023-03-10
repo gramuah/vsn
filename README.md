@@ -2,13 +2,16 @@
 
 This is the official code repository of the work described in our [ICARA 2023 paper](https://gram.web.uah.es/data/publications/icara2023-gutierrez.pdf). 
 <p align="center">
-  <img src="./vsn_model.png" alt="VSN Model" title="Towards Clear Evaluation of Robotic Visual Semantic Navigation" width="652" zoom="343" align="center" />
+  <img src="./vsn_model.png" alt="VSN Model" title="Towards Clear Evaluation of Robotic Visual Semantic Navigation" width="480" zoom="343" align="center" />
 </p>
 
-The code provides the implementation of Miniworld Maze experiments.
+The code provides the implementation of Miniworld Maze experiments using for the evaluation the 100-Mazes dataset!
 
+<p align="center">
+  <img src="./mazes-logo.gif" alt="VSN Model" title="Towards Clear Evaluation of Robotic Visual Semantic Navigation" width="480" zoom="343" align="center" />
+</p>
 
-It is a minimal fork from [pyRIL](https://github.com/SergioHdezG/pyRIL) library adapted for visual navigation. Please, visit the original repository if you want to find a comprehensive Reinforcement and Imitation Learning library.
+Note that our implementation is a minimal fork from [pyRIL](https://github.com/SergioHdezG/pyRIL) library adapted for visual navigation. Please, visit the original repository if you want to find a comprehensive Reinforcement and Imitation Learning library.
 
 ### License
 

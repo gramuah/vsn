@@ -21,7 +21,7 @@ This repository is released under the GNU General Public License v3.0 License (r
 
 If you make use of this dataset and software, please cite the following reference in any publication:
 
-	  @inproceedings{onoro2016,
+	  @inproceedings{Gutierrez-Alvarez2023,
         Author = {Guti\'errez-\'Alvarez, C. and Hernandez-Garc\'ia, S. and Nasri, N. and Cuesta-Infante, A. and L\'opez-Sastre, R.~J.},
         Title = {Towards Clear Evaluation of Robotic Visual Semantic Navigation},
         Booktitle = {ICARA},
